@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Sine Wave</title>
-      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-   </head>
-   <body>
-      <py-env>
-         - matplotlib
-         - numpy
-      </py-env>
-      <py-script>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>Sine Wave</title>
+  <link rel="stylesheet"
+        href="https://pyscript.net/alpha/pyscript.css" />
+  <script defer
+          src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+
+<body>
+  <div>
+    <py-env>
+      - matplotlib
+      - numpy
+    </py-env>
+    <py-script>
       import matplotlib.pyplot as plt
       import numpy as np
       time = np.linspace(0, 2 * np.pi, 100)
@@ -20,21 +26,23 @@
       plt
       </pv-script>
       <py-repl></py-repl>
-      <br>
-      <div id="notes">
-         <br>
-         <b>Notes: </b>
-         <br>
-         1. Website hosted on GitHub here:
-         <a href="https://github.com/vishwarajanand/pyscripting">
-         clickable link here
-         </a>
-         <br>
-         2. Short blog on this topic:
-         <a
-            href="https://vishwarajanand.com/tech/executing-python-in-browser/">
-         clickable link here
-         </a>
-      </div>
-   </body>
+  </div>
+
+  <br>
+  <div id="notes">
+    <br>
+    <b>Notes: </b>
+    <br>
+    1. Website hosted on GitHub here:
+    <a href="https://github.com/vishwarajanand/pyscripting">
+      clickable link here
+    </a>
+    <br>
+    2. Short blog on this topic:
+    <a href="https://vishwarajanand.com/tech/executing-python-in-browser/">
+      clickable link here
+    </a>
+  </div>
+</body>
+
 </html>
