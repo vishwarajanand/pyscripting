@@ -7,11 +7,11 @@
           content="width=device-width,initial-scale=1" />
     <title>PyScript!</title>
     <link rel="stylesheet"
-    href="https://pyscript.net/releases/2025.3.1/core.css" />
-<script type="module"
-      src="https://pyscript.net/releases/2025.3.1/core.js"></script>
-<link rel="stylesheet"
-    href="https://pyscript.net/releases/2025.3.1/xterm.css" />
+          href="https://pyscript.net/releases/2025.3.1/core.css" />
+    <script type="module"
+          src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+    <link rel="stylesheet"
+          href="https://pyscript.net/releases/2025.3.1/xterm.css" />
 </head>
 
 <body>
@@ -20,16 +20,18 @@
       - matplotlib
       - numpy
     </py-env>
-    <py-script>
+
+    <script type="py">
       import matplotlib.pyplot as plt
       import numpy as np
       time = np.linspace(0, 2 * np.pi, 100)
-      plt.plot(time, np.sin(time) )
-      plt
-      </pv-script>
-      <py-repl></py-repl>
-
-          <!-- Use MicroPython to evaluate some Python -->
+      plt.plot(time, np.sin(time))
+      plt.show() # Or display(plt) depending on PyScript version's preferred way to show plots
+                 # For newer PyScript, the plot might render automatically if it's the last expression.
+                 # If not, explicitly use display(plt) or plt.show()
+    </script>
+    <py-repl></py-repl>
+      
     <script id="python-terminal" type="py" terminal="">
         import code
         code.interact()
